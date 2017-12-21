@@ -1,0 +1,42 @@
+fastlane_version "2.68.2"
+
+default_platform :android
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Upload Backable Fragment Protocol"
+  lane :release_backable_fragment do
+    gradle(task: ":backable-fragment:install")
+    gradle(task: ":backable-fragment:bintrayUpload")
+  end
+
+  desc "Upload Date Formatter Protocol"
+  lane :release_date_formatter do
+    gradle(task: ":date-formatter:install")
+    gradle(task: ":date-formatter:bintrayUpload")
+  end
+
+  desc "Upload Disposer Protocol"
+  lane :release_disposer do
+    gradle(task: ":rx-disposer:install")
+    gradle(task: ":rx-disposer:bintrayUpload")
+  end
+
+  desc "Upload Message Presenter Protocol"
+  lane :release_message_presenter do
+    gradle(task: ":message-presenter:install")
+    gradle(task: ":message-presenter:bintrayUpload")
+  end
+
+  desc "Deploy all libs to maven"
+  lane :deploy do
+    release_backable_fragment
+    release_date_formatter
+    release_disposer
+    release_message_presenter
+  end
+end

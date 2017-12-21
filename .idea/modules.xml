@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-protocols.iml" filepath="$PROJECT_DIR$/android-protocols.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backable-fragment/backable-fragment.iml" filepath="$PROJECT_DIR$/backable-fragment/backable-fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/date-formatter/date-formatter.iml" filepath="$PROJECT_DIR$/date-formatter/date-formatter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/message-presenter/message-presenter.iml" filepath="$PROJECT_DIR$/message-presenter/message-presenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rx-disposer/rx-disposer.iml" filepath="$PROJECT_DIR$/rx-disposer/rx-disposer.iml" />
+    </modules>
+  </component>
+</project>
