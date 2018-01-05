@@ -1,1 +1,1 @@
-include ':app', ':rx-disposer', ':backable-fragment', ':message-presenter', ':date-formatter'
+include ':app', ':protocol-rx-disposer', ':protocol-backable-fragment', ':protocol-message-presenter', ':protocol-date-formatter'

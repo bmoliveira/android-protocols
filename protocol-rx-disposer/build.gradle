@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply from: '../common-dependencies.gradle'
+apply from: 'https://gist.githubusercontent.com/bmoliveira/3d9c28aaaa737aba9ad5fd894603395b/raw/48c34ade38f142ec11325579d9c9cffc63586194/bintray-deploy.gradle'
+
+android {
+  compileSdkVersion libTargetSdk
+  buildToolsVersion buildToolsVersion
+
+  defaultConfig {
+    minSdkVersion 19
+    targetSdkVersion libTargetSdk
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
+  implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+}

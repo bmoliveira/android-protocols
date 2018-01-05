@@ -9,8 +9,8 @@ android {
     applicationId "com.broliveira.example.protocols"
     minSdkVersion 19
     targetSdkVersion libTargetSdk
-    versionCode libVersionCode
-    versionName libVersion
+    versionCode 0
+    versionName "0"
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
   buildTypes {
@@ -25,8 +25,8 @@ dependencies {
   implementation "com.android.support:appcompat-v7:$supportVersion"
   implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
-  implementation project(':rx-disposer')
-  implementation project(":backable-fragment")
-  implementation project(":message-presenter")
-  implementation project(":date-formatter")
+  implementation project(':protocol-rx-disposer')
+  implementation project(':protocol-backable-fragment')
+  implementation project(':protocol-message-presenter')
+  implementation project(':protocol-date-formatter')
 }
