@@ -5,92 +5,17 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.006565">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.002372">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.002025">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.002016">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: Switch to android release_backable_fragment lane" time="0.00169">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="03: gradle" time="1.378607">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="04: gradle" time="2.18689">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="05: gradle" time="4.556922">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="06: Switch to android release_date_formatter lane" time="0.00132">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="07: gradle" time="1.234078">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="08: gradle" time="2.416201">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="09: gradle" time="4.856407">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="10: Switch to android release_disposer lane" time="0.001612">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="11: gradle" time="1.241378">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="12: gradle" time="2.148975">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="13: gradle" time="4.771778">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="14: Switch to android release_message_presenter lane" time="0.001448">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="15: gradle" time="1.228352">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="16: gradle" time="2.282381">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="17: gradle" time="4.701841">
+      <testcase classname="fastlane.lanes" name="2: deploy_module_bintray" time="30.608017">
         
       </testcase>
     

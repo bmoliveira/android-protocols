@@ -62,6 +62,6 @@ This protocol adds the functionality of disposeBag to a class.
 
 ### Import using gradle
 
-` implementation 'com.broliveira:protocol-rx-disposer:0.1@aar' `
+` implementation 'com.broliveira:protocol-rx-disposer:0.2@aar' `
 or
-` implementation 'com.broliveira:protocol-rx-disposer:0.1' `
+` implementation 'com.broliveira:protocol-rx-disposer:0.2' `

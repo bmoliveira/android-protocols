@@ -10,37 +10,29 @@ platform :android do
 
   desc "Upload Backable Fragment Protocol"
   lane :release_backable_fragment do
-    gradle(task: "clean")
-    gradle(task: ":protocol-backable-fragment:install")
-    gradle(task: ":protocol-backable-fragment:bintrayUpload")
+    deploy_module_bintray(module_name: "protocol-backable-fragment", should_clean: true)
   end
 
   desc "Upload Date Formatter Protocol"
   lane :release_date_formatter do
-    gradle(task: "clean")
-    gradle(task: ":protocol-date-formatter:install")
-    gradle(task: ":protocol-date-formatter:bintrayUpload")
+    deploy_module_bintray(module_name: "protocol-date-formatter", should_clean: true)
   end
 
   desc "Upload Disposer Protocol"
   lane :release_disposer do
-    gradle(task: "clean")
-    gradle(task: ":protocol-rx-disposer:install")
-    gradle(task: ":protocol-rx-disposer:bintrayUpload")
+    deploy_module_bintray(module_name: "protocol-rx-disposer", should_clean: true)
   end
 
   desc "Upload Message Presenter Protocol"
   lane :release_message_presenter do
-    gradle(task: "clean")
-    gradle(task: ":protocol-message-presenter:install")
-    gradle(task: ":protocol-message-presenter:bintrayUpload")
+    deploy_module_bintray(module_name: "protocol-message-presenter", should_clean: true)
   end
 
   desc "Deploy all libs to maven"
   lane :deploy do
-    release_backable_fragment
-    release_date_formatter
-    release_disposer
-    release_message_presenter
+    deploy_module_bintray(module_name: "protocol-backable-fragment", should_clean: true)
+    deploy_module_bintray(module_name: "protocol-date-formatter")
+    deploy_module_bintray(module_name: "protocol-rx-disposer")
+    deploy_module_bintray(module_name: "protocol-message-presenter")
   end
 end
